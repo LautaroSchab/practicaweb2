@@ -1,0 +1,88 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom, #1d3557, #457b9d, #a8dadc);
+    color: #f1faee;
+}
+
+.btn-unificado {
+    background-color: #e63946;
+    color: #ffffff;
+    border: 1px solid #e63946;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+    .btn-unificado:hover {
+        background-color: #d62828;
+        color: #ffffff;
+    }
+
+.titulo-unificado {
+    color: #f1faee;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.btn-unificado1 {
+    background-color: #06d6a0;
+    color: #1d3557;
+    border: 1px solid #06d6a0;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+    .btn-unificado1:hover {
+        background-color: #04b584;
+        color: #ffffff;
+    }
+
+.btn-unificado2 {
+    background-color: #118ab2;
+    color: #ffffff;
+    border: 1px solid #118ab2;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+    .btn-unificado2:hover {
+        background-color: #0d6c91;
+        color: #ffffff;
+    }
+
+.full-screen-image {
+    /* // Puedes usar una imagen si lo deseas */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

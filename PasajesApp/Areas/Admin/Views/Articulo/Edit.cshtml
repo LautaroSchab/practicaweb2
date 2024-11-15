@@ -1,0 +1,109 @@
+﻿@model pasajeApp.Modelo.ViewModel.ArticuloVM
+
+@{
+    ViewData["Title"] = "Editar Artículo";
+}
+
+<h2 class="titulo-unificado text-primary">Editar artículo</h2>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Articulo.Id" />
+
+    <div class="col-10 offset-1 mt-4">
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Articulo.Nombre"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Articulo.Nombre" class="form-control" placeholder="Ingresa el nombre del artículo" />
+                <span asp-validation-for="Articulo.Nombre" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br />
+
+       @*  <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Articulo.Descripcion"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Articulo.Descripcion" class="form-control" placeholder="Ingresa la descripción del artículo" />
+                <span asp-validation-for="Articulo.Descripcion" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br /> *@
+
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Articulo.precio"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Articulo.precio" class="form-control" placeholder="Ingresa el precio" />
+                <span asp-validation-for="Articulo.precio" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br />
+@* 
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Articulo.Stock"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Articulo.Stock" class="form-control" placeholder="Ingresa el stock disponible" />
+                <span asp-validation-for="Articulo.Stock" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br /> *@
+
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Articulo.CategoriaId"></label>
+            </div>
+            <div class="col-8">
+                <select asp-for="Articulo.CategoriaId" class="form-control" asp-items="Model.ListaCategorias"></select>
+                <span asp-validation-for="Articulo.CategoriaId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Articulo.habilitada"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Articulo.habilitada" type="form-control" />
+                <span asp-validation-for="Articulo.habilitada" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br />
+
+        <br />
+
+        <!-- Nuevo campo para la imagen -->
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Articulo.Imagen"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Articulo.Imagen" class="form-control" placeholder="Ingrese la URL de la imagen" />
+                <span asp-validation-for="Articulo.Imagen" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn-unificado form-control">Editar Artículo</button>
+            </div>
+            &nbsp;
+            <div class="col">
+                <a asp-action="Index" class="btn btn-success form-control">Volver atrás</a>
+            </div>
+        </div>
+    </div>
+</form>

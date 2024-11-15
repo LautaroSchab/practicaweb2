@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Tienda Online</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        /* Fondo con degradado */
+        body {
+            background: linear-gradient(to bottom, #1d3557, #457b9d, #a8dadc);
+            color: #f1faee;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos para los títulos */
+        .titulo-unificado {
+            color: #f1faee;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px #000000;
+            margin-top: 20px;
+        }
+
+        /* Estilo para la sección de descripción */
+        .descripcion-gym {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+            color: #1d3557;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+            .descripcion-gym h2 {
+                font-size: 2rem;
+                color: #e63946;
+            }
+
+            .descripcion-gym p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+        .btn-unificado {
+            background-color: #e63946;
+            color: #ffffff;
+            border: 1px solid #e63946;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            width: 200px;
+            font-weight: bold;
+        }
+
+            .btn-unificado:hover {
+                background-color: #d62828;
+                color: #ffffff;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Opcional: contenido del encabezado -->
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="titulo-unificado">Bienvenido a GYM STORE</h1>
+    </div>
+
+    <div class="container descripcion-gym">
+        <h2>¿Quiénes somos?</h2>
+        <p>En GYM STORE nos dedicamos a ofrecerte los mejores productos y accesorios para tu entrenamiento físico. Desde ropa deportiva hasta equipos de gimnasio, nuestra tienda está especializada en brindarte todo lo que necesitas para alcanzar tus metas de bienestar y salud. Con nuestra amplia gama de artículos de alta calidad, te ayudamos a lograr tus objetivos de manera cómoda, segura y efectiva.</p>
+        <p>Ya seas un principiante o un atleta experimentado, en GYM STORE encontrarás lo que buscas. Además, contamos con asesoría especializada para guiarte en la elección de productos que se adapten a tus necesidades y objetivos personales.</p>
+        <a href="#" class="btn-unificado">Explora nuestros productos</a>
+    </div>
+
+    <footer class="footer text-muted mt-5">
+        <div class="container">
+            &copy; 2024 - GYM STORE - <a href="#">Política de Privacidad</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
